@@ -19,6 +19,7 @@ public class Tester {
     private Integer testId;
 
     @Column(name = "test_interval", nullable = false)
+    @Type(type = "com.example.pgintervaltest.types.PGIntervalType")
     private PGInterval testInterval;
 
     public Integer getTestId() { return testId; }
